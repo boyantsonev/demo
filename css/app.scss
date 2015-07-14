@@ -1,0 +1,179 @@
+@import 'bootstrap.min.css';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+$white: #fff;
+$black: #1a1a1a;
+$green: #43b77b;
+$grey: #989898;
+$screen-xs-max: 767px;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: 'Open Sans';
+  color: $black;
+  font-size: 18px;
+
+  a {
+    color: $white;
+
+    &:hover, &:focus {
+      color: $white;
+    }
+  }
+}
+
+.container {
+  width: 75%;
+}
+
+@media (max-width: $screen-xs-max) {
+  .container {
+    width: 90%;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+nav {
+  padding-bottom: 100px;
+
+  .logo {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+
+.hero {
+  background: url('../img/bg.png');
+  background-size: cover;
+  padding-top: 40px;
+  background-color: $black;
+  overflow: hidden;
+  min-height: 80vh;
+  color: $white;
+
+  .call-to-action {
+    padding-top: 30px;
+
+    input, .btn {
+      margin: 7px 0;
+      height: 50px;
+      width: 100%;
+      line-height: 50px;
+      font-size: 16px;
+      -webkit-appearance: none;
+    }
+
+    .btn {
+      padding: 0;
+    }
+  }
+
+  .first-email {
+    padding-top: 13vh;
+  }
+}
+
+.btn {
+  background-color: #222;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  overflow: hidden;
+  color: #FFF;
+  text-transform: uppercase;
+  background-color: $green;
+  color: $white;
+
+  &:hover {
+    background-color: darken($green, 10%);
+    color: darken($white, 10%);
+  }
+}
+
+.companies {
+  .find-out {
+    padding: 15px;
+    text-transform: uppercase;
+    color: $grey;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .company-logos {
+    background: url('../img/company-logos.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 10vh;
+  }
+}
+
+.app {
+  padding: 50px 20px 0;
+
+  blockquote {
+    margin: 80px 0 50px;
+    font-size: 18px;
+  }
+
+  .showoff {
+    background: url('../img/app.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    height: 460px;
+    width: 100%;
+  }
+}
+
+h3 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.footer {
+  background-color: $black;
+  padding: 100px 0;
+  color: $white;
+
+  .map {
+    background: url('../img/map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 250px;
+  }
+
+  .love {
+    color: $green;
+    font-weight: 600;
+  }
+
+  .menu {
+    padding: 40px 0;
+    font-size: 14px;
+
+    li {
+      list-style-type: none;
+      text-transform: uppercase;
+    }
+  }
+}
